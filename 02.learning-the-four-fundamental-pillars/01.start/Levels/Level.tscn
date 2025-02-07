@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://gcevl1ga7u1w"]
+[gd_scene load_steps=11 format=3 uid="uid://gcevl1ga7u1w"]
 
 [ext_resource type="Script" path="res://Levels/Level.gd" id="1_14qqf"]
 [ext_resource type="PackedScene" uid="uid://3am3io3b8img" path="res://Areas/InsideCastleTileMap.tscn" id="2_q7pcy"]
 [ext_resource type="PackedScene" uid="uid://trvjobk3jg3t" path="res://Objects/Crate/Crate.tscn" id="3_2ibx0"]
 [ext_resource type="PackedScene" uid="uid://b6csjxqmlfpn8" path="res://Actors/KingPig/KingPigPlayer2D.tscn" id="3_va2pq"]
 [ext_resource type="PackedScene" uid="uid://c80fci1r5e5lj" path="res://Objects/Diamond/Diamond.tscn" id="3_xjngc"]
+[ext_resource type="PackedScene" uid="uid://cecvncciva15w" path="res://Objects/Crate/LootCrate/LootCrate.tscn" id="4_beqjr"]
 
 [sub_resource type="Animation" id="Animation_d83j8"]
 length = 0.001
@@ -127,6 +128,38 @@ position = Vector2(1680, 784)
 
 [node name="LootCrate6" parent="Crates" instance=ExtResource("3_2ibx0")]
 position = Vector2(1624, 704)
+
+[node name="Crate" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1306, 546)
+drop_rate = 1.0
+
+[node name="Crate2" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1423, 386)
+drop_rate = 0.0
+
+[node name="Crate3" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1370, 466)
+drop_rate = 0.0
+
+[node name="Crate4" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1306, 546)
+drop_rate = 0.0
+
+[node name="Crate5" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1431, 264)
+drop_rate = 0.0
+
+[node name="Crate6" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1287, 307)
+drop_rate = 0.0
+
+[node name="Crate7" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1194, 465)
+drop_rate = 0.0
+
+[node name="Crate8" parent="Crates" instance=ExtResource("4_beqjr")]
+position = Vector2(1550, 450)
+drop_rate = 0.0
 
 [node name="Bombs" type="Node2D" parent="."]
 

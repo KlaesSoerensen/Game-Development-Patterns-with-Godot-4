@@ -1,3 +1,4 @@
+class_name Crate
 extends Node2D
 
 signal broke
@@ -18,9 +19,17 @@ func _physics_process(delta):
 
 
 func _on_hurt_box_2d_hurt(_damage: int) -> void:
+	damage(_damage)
+
+func damage(_damage: int) -> void:
 	health -= _damage
 	if health < 1:
-		broke.emit()
-		animation_player.play("break")
+		shatter()
 	else:
 		animation_player.play("hit")
+	
+
+func shatter() -> void:
+	broke.emit()
+	animation_player.play("break")
+	
