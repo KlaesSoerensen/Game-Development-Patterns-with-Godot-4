@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://gcevl1ga7u1w"]
+[gd_scene load_steps=11 format=3 uid="uid://gcevl1ga7u1w"]
 
 [ext_resource type="Script" path="res://Levels/Level.gd" id="1_14qqf"]
 [ext_resource type="PackedScene" uid="uid://3am3io3b8img" path="res://Areas/InsideCastleTileMap.tscn" id="2_q7pcy"]
 [ext_resource type="PackedScene" uid="uid://b7ygipwdo26sw" path="res://Objects/Crate/LootCrate/LootCrate.tscn" id="3_2ibx0"]
 [ext_resource type="PackedScene" uid="uid://b6csjxqmlfpn8" path="res://Actors/KingPig/KingPigPlayer2D.tscn" id="3_va2pq"]
 [ext_resource type="PackedScene" uid="uid://c80fci1r5e5lj" path="res://Objects/Diamond/Diamond.tscn" id="3_xjngc"]
+[ext_resource type="PackedScene" uid="uid://bg11qy015hxgy" path="res://Actors/BumpingPig/LootBumpingPig/LootBumpingPig.tscn" id="4_aqadr"]
 
 [sub_resource type="Animation" id="Animation_d83j8"]
 length = 0.001
@@ -131,6 +132,15 @@ position = Vector2(1624, 704)
 [node name="Bombs" type="Node2D" parent="."]
 
 [node name="Enemies" type="Node2D" parent="."]
+
+[node name="BumpingPig" parent="Enemies" instance=ExtResource("4_aqadr")]
+position = Vector2(547, 533)
+
+[node name="BumpingPig2" parent="Enemies" instance=ExtResource("4_aqadr")]
+position = Vector2(481, 383)
+
+[node name="BumpingPig3" parent="Enemies" instance=ExtResource("4_aqadr")]
+position = Vector2(1000, 445)
 
 [node name="Diamonds" type="Node2D" parent="."]
 

@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg11qy015hxgy"]
+
+[ext_resource type="PackedScene" uid="uid://co2jesq7s1cgo" path="res://Actors/BumpingPig/BumpingPig.tscn" id="1_ut00a"]
+[ext_resource type="Script" path="res://Actors/BumpingPig/LootBumpingPig/bumping_pig.gd" id="2_jp68y"]
+[ext_resource type="PackedScene" uid="uid://qa8y7skvlw5s" path="res://Objects/Loot2D/Loot2D.tscn" id="3_kr4v6"]
+
+[node name="BumpingPig" instance=ExtResource("1_ut00a")]
+script = ExtResource("2_jp68y")
+
+[node name="Marker2D" parent="BumpingEnemy2D" index="4" instance=ExtResource("3_kr4v6")]
+drop_rate = 0.5
