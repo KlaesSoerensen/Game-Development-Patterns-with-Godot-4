@@ -1,3 +1,4 @@
+class_name ScorePoint
 extends Node
 
 @onready var score_label = $InterfaceCanvasLayer/ScoreLabel
@@ -8,4 +9,4 @@ func _ready():
 
 
 func update_score_label():
-	score_label.text = "%s"
+	score_label.text = "%s" % Score.currentScore
